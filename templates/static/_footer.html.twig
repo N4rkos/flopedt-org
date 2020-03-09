@@ -16,10 +16,10 @@
             <div class="footer__elem col">
                 <h4 trs-id="footer-elem2-title">Liens rapides</h4>
                 <ul>
-                    <li><a trs-id="nav-item1" href="">flop!edt</a></li>
-                    <li><a trs-id="nav-item2" href="">Créateurs</a></li>
-                    <li><a trs-id="nav-item3" href="">Aperçu</a></li>
-                    <li><a trs-id="nav-item4" href="">Contact</a></li>
+                    <li><a trs-id="nav-item1" href="">{{ 'nav.elem.1'|trans }}</a></li>
+                    <li><a trs-id="nav-item2" href="">{{ 'nav.elem.2'|trans }}</a></li>
+                    <li><a trs-id="nav-item3" href="">{{ 'nav.elem.3'|trans }}</a></li>
+                    <li><a trs-id="nav-item4" href="">{{ 'nav.elem.4'|trans }}</a></li>
                 </ul>
             </div>
             <div class="footer__elem col">
@@ -31,8 +31,8 @@
                 <div style="height: 20px;"></div>
                 <h4 trs-id="footer-elem4-title">Langues</h4>
                 <div class="row">
-                    <img id="lang-fr" class="flag" src="{{ asset('build/svg/fr-flag.svg') }}" alt="">
-                    <img id="lang-en" class="flag" src="{{ asset('build/svg/en-flag.svg') }}" alt="">
+                    <a href="{{ path('index', {_locale: 'fr'}) }}"><img id="lang-fr" class="flag" src="{{ asset('build/svg/fr-flag.svg') }}" alt=""></a>
+                    <a href="{{ path('index', {_locale: 'en'}) }}"><img id="lang-en" class="flag" src="{{ asset('build/svg/en-flag.svg') }}" alt=""></a>
                 </div>
             </div>
         </div>

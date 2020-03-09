@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
  */
 function addShadowToNavbar() {
     let y = this.window.scrollY;
-    if (y == 0) {
+    if (y === 0) {
         navbar.classList.remove('shadow');
     } else {
         navbar.classList.add('shadow');
@@ -20,6 +20,18 @@ document.getElementById('menu-icon').addEventListener('click', function () {
     document.getElementById('menu-icon').classList.toggle('change');
     navbar.classList.toggle('change');
 
+});
+var reviews = new Swiper('.reviews-swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: '.reviews-swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+    },
 });
 
 let swiper = new Swiper('.swiper-container', {
@@ -38,6 +50,7 @@ let swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+
 
 $('.flop__authors__pictures img').click(function() {
     $('.flop__authors__pictures img').removeClass('active');
