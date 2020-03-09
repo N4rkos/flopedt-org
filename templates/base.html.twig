@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="flop!EDT, l'outil de création d'emploi du temps libre et open source.">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/images/favicon-32x32.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+    <title>Flop!EDT</title>
+    <!--CUSTOM JS-->
+</head>
+
+<body>
+{% include 'static/_navbar.html.twig' %}
+{% block body %}
+{% endblock %}
+{% include 'static/_footer.html.twig' %}
+{% block javascripts %}
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/583050988a.js" crossorigin="anonymous"></script>
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    {{ encore_entry_script_tags('app') }}
+    <script src="{{ asset('build/index.js') }}"></script>
+{% endblock %}
+</body>
+
+</html>

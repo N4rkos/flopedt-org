@@ -1,0 +1,75 @@
+.flop__authors {
+  height: auto;
+  padding-bottom: 100px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+
+    p {
+      text-align: center;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .flop__authors__pictures {
+    padding: 40px 0;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 20px;
+      filter: grayscale(100%);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    img:hover,
+    .active {
+      filter: none;
+    }
+  }
+
+  .flop__authors__content {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .flop__authors__details {
+    display: none;
+    &.active {
+      display: block;
+    }
+
+    p {
+      color: #5c5c5c;
+      margin-bottom: 20px;
+    }
+
+    .flop__authors__name {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 15px;
+    }
+  }
+}
