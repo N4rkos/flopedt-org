@@ -1,0 +1,10 @@
+#nav
+nav:
+    elem:
+        1: flop!EDT
+        2: Créateurs
+        3: Aperçu
+        4: Contact
+#heading
+heading:
+    title: votre emploi du temps personnalisé

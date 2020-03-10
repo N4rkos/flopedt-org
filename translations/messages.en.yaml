@@ -1,0 +1,10 @@
+#nav
+nav:
+    elem:
+        1: flop!EDT
+        2: Team
+        3: Overview
+        4: Contact
+#heading
+heading:
+    title: your personalized timetable
