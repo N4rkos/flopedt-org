@@ -1,7 +1,22 @@
 let navbar = document.getElementById('navbar');
 
+const links = document.querySelectorAll('.nav-links');
+const sections = document.querySelectorAll('section');
+
+for (let i = 0; i < links.length; i++) {
+    const link = links[i];
+    link.addEventListener('click', function () {
+        $('.nav-active').removeClass('nav-active');
+        link.classList.add('nav-active');
+    });
+}
 window.addEventListener('scroll', function () {
-    addShadowToNavbar()
+    addShadowToNavbar();
+    for(let i = 0; i < sections.length; i++) {
+        if(window.scrollY === sections[i].offsetTop){
+            console.log(sections[i]);
+        }
+    }
 });
 
 /**
@@ -52,7 +67,7 @@ let swiper = new Swiper('.swiper-container', {
 });
 
 
-$('.flop__authors__pictures img').click(function() {
+$('.flop__authors__pictures img').click(function () {
     $('.flop__authors__pictures img').removeClass('active');
     $(this).addClass('active');
     $('.flop__authors__details').removeClass('active');

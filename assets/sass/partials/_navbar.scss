@@ -30,8 +30,33 @@
         transition: 0.5s ease-in-out;
         text-transform: uppercase;
 
-        &:hover {
+        &.nav-active, &:hover {
           color: $accentColor;
+          position: relative;
+          cursor: pointer;
+          transition: .5s ease-in-out;
+
+          &:after {
+            border-radius: 50px;
+            content: '';
+            position: absolute;
+            background: $accentColor;
+            width: 20px;
+            height: 3px;
+            top: 15px;
+            right: 15px;
+          }
+
+          &:before {
+            border-radius: 50px;
+            content: '';
+            position: absolute;
+            background: $accentColor;
+            width: 20px;
+            height: 3px;
+            bottom: 15px;
+            left: 15px;
+          }
         }
 
         &.contact-link {
@@ -42,5 +67,11 @@
         }
       }
     }
+  }
+}
+
+@keyframes goToRight {
+  100% {
+    right: 15px;
   }
 }

@@ -14,5 +14,11 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "file": "^0.2.2",
+        "fs": "0.0.1-security",
+        "system": "^2.0.1",
+        "typed.js": "^2.0.11"
     }
 }

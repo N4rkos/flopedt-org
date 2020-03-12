@@ -6,3 +6,6 @@ server:
 
 encore:
 	npm run watch
+
+clear:
+	php bin/console cache:clear
