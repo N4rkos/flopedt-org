@@ -5,6 +5,13 @@
   position: absolute;
   right: 50px;
 
+  &:hover {
+    .bar1,
+    .bar2,
+    .bar3 {background: $accentColor}
+  }
+
+
   .bar1,
   .bar2,
   .bar3 {

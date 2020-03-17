@@ -21,10 +21,6 @@ Encore
         from: './assets/svg',
         to: 'svg/[path][name].[ext]'
     })
-    .copyFiles({
-        from: './assets/utils',
-        to: 'utils/[path][name].[ext]'
-    })
 
     /*
      * ENTRY CONFIG
@@ -38,6 +34,7 @@ Encore
     .addEntry('app', './assets/js/app.js')
     .addEntry('index', './assets/js/index.js')
     .addEntry('contributors', './assets/js/contributors/contributors.js')
+    .addEntry('contact', './assets/js/contact.js')
 
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')

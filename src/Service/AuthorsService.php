@@ -15,7 +15,7 @@ class AuthorsService
     private const AUTHORS_SECTION_SEPARATORS = "#";
     private const AUTHORS_SECTION_ITEM = "-";
     private const REPLACEMENT_CHAR = "";
-    private const URL_TO_AUTHORS = 'https://thomasgouveia.fr/xflop/AUTHORS.txt';
+    private const URL_TO_AUTHORS = 'https://flopedt.iut-blagnac.fr/static/AUTHORS';
 
     /**
      * Récupère le contenu du fichier AUTHORS sur le serveur et retourne un tableau formatté.

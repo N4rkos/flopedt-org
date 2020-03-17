@@ -12,13 +12,34 @@
   padding: 0 15px;
   transition: 0.5s ease-in-out;
 
+  .flop__navbar__brand {
+    a {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+
+  .contact-link {
+    background: $accentColor;
+    color: $primaryColor;
+    border-radius: $borderRadius;
+    padding: 10px 20px;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      background: $primaryColor;
+      color: $accentColor;
+      transform: translateY(-10px);
+      cursor: pointer;
+    }
+  }
+
   ul {
     list-style-type: none;
-    margin: 0;
     display: flex;
     align-items: center;
     padding: 0;
-    margin-right: 15px;
+    margin: 0 15px 0 0;
 
     li {
       display: inline;
@@ -29,45 +50,76 @@
         color: #000;
         transition: 0.5s ease-in-out;
         text-transform: uppercase;
+        position: relative;
 
-        &.nav-active, &:hover {
+        &:after {
+          border-radius: 50px;
+          content: '';
+          position: absolute;
+          background: $accentColor;
+          width: 20px;
+          height: 2px;
+          top: 15px;
+          opacity: 0;
+          right: 100%;
+          transition: .5s ease-in-out;
+        }
+
+        &:before {
+          border-radius: 50px;
+          content: '';
+          position: absolute;
+          background: $accentColor;
+          width: 20px;
+          height: 2px;
+          bottom: 15px;
+          opacity: 0;
+          left: 100%;
+          transition: .5s ease-in-out;
+        }
+
+        &:hover {
           color: $accentColor;
           position: relative;
           cursor: pointer;
           transition: .5s ease-in-out;
 
+          &:after, &:before {
+            opacity: 1;
+          }
+
           &:after {
-            border-radius: 50px;
-            content: '';
-            position: absolute;
-            background: $accentColor;
-            width: 20px;
-            height: 3px;
-            top: 15px;
             right: 15px;
           }
 
           &:before {
-            border-radius: 50px;
-            content: '';
-            position: absolute;
-            background: $accentColor;
-            width: 20px;
-            height: 3px;
-            bottom: 15px;
             left: 15px;
           }
         }
 
-        &.contact-link {
-          background: $accentColor;
-          color: $primaryColor;
-          border-radius: $borderRadius;
-          padding: 10px 20px;
+        &.nav-active {
+          color: $accentColor;
+          position: relative;
+          cursor: pointer;
+          transition: .5s ease-in-out;
+
+          &:after, &:before {
+            opacity: 1;
+          }
+
+          &:after {
+            right: 15px;
+          }
+
+          &:before {
+            left: 15px;
+          }
+
         }
       }
     }
   }
+
 }
 
 @keyframes goToRight {

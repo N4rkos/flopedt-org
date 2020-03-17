@@ -13,3 +13,8 @@ contributors:
         _locale: fr
     requirements:
         _locale: en|fr
+
+contact:
+    path: /contact
+    controller: App\Controller\DefaultController::contact
+    methods: [POST]

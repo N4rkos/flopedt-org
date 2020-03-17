@@ -6,13 +6,18 @@
             <p>Une question par rapport aux fonctionnalités, à une éventuelle installation pour votre établissement
                 ? Remplissez les champs ci-dessous afin de nous contacter ! Nous vous répondrons dans les plus brefs
                 délais.</p>
-            <form class="contact__form col" action="">
+            <form class="contact__form col" method="post">
                 <div class="row">
-                    <input type="text" placeholder="Votre nom"/>
-                    <input type="email" placeholder="Votre email"/>
+                    <input name="contact__name" type="text" placeholder="Votre nom"/>
+                    <input name="contact__mail" type="email" placeholder="Votre email"/>
                 </div>
-                <textarea placeholder="Votre message"></textarea>
-                <div class="row justify-center">
+                <textarea name="contact__message" placeholder="Votre message"></textarea>
+                <!--
+                <div class="row align-center">
+                    <input class="switch" type="checkbox" name="is-copy"> Recevoir une copie
+                </div>-->
+                <div class="col justify-center align-center">
+                    <span style="margin-bottom: 10px" class="contact__result"></span>
                     <button trs-id="contact-submit" class="shadow" type="submit">Envoyer</button>
                 </div>
             </form>

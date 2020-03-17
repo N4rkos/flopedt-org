@@ -20,6 +20,10 @@
 {% endblock %}
 {% include 'static/_footer.html.twig' %}
 {% block javascripts %}
+    <script>
+        const CONTACT_URL = "{{ path('contact') }}";
+        const LOADER_FILE = "{{ asset('build/svg/loader.svg') }}";
+    </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!--FONT AWESOME-->
@@ -29,6 +33,7 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     {{ encore_entry_script_tags('app') }}
     <script src="{{ asset('build/index.js') }}"></script>
+    <script src="{{ asset('build/contact.js') }}"></script>
 {% endblock %}
 </body>
 

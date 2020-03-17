@@ -10,6 +10,12 @@
     z-index: -1;
   }
 
+  .bottom-wave {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
   .flop__view__more__content {
     width: 100%;
     flex-direction: column;
@@ -63,13 +69,20 @@
       }
     }
 
-    .flop__demo__btn {
-      margin-top: 100px;
+    .flop__btn {
+      margin: 100px 20px;
       text-decoration: none;
       color: $logoGreen;
       text-transform: uppercase;
       padding: 15px 15px;
       border: 2px solid $logoGreen;
+      transition: .5s ease-in-out;
+
+      &:hover {
+        color: $primaryColor;
+        background: $accentColor;
+        transform: translateY(-10px);
+      }
     }
 
     .flop__situation {

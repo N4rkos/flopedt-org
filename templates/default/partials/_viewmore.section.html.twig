@@ -1,5 +1,6 @@
 <section class="flop__view__more">
     <img src="{{ asset('build/svg/view-more-wave.svg') }}" alt="" class="top-wave">
+    <img src="{{ asset('build/svg/grey-wave.svg') }}" alt="" class="bottom-wave">
     <div class="wrapper">
         <div class="flop__view__more__content">
             <div class="top__content">
@@ -7,6 +8,7 @@
                 <p>Définissez vos contraintes et préférences, flop!EDT se chargera de fabriquer automatiquement le
                     meilleur emploi du temps possible. Si par malheur il n’est pas parfait, il sera possible à
                     chacun⋅e de le modifier !</p>
+                <span class="flop__situation">Logiciel en cours de développement.</span>
             </div>
             <div class="bottom__content col">
                 <div class="row">
@@ -48,9 +50,12 @@
                     </div>
                 </div>
                 <div class="col align-center">
-                    <a trs-id="demo" class="flop__demo__btn"
-                       href="https://flopedt.iut-blagnac.fr/edt/INFO/">Démonstration</a>
-                    <span class="flop__situation">En cours de développement.</span>
+                    <div class="row justify-center">
+                        <a class="flop__btn demo__btn"
+                           href="https://flopedt.iut-blagnac.fr/edt/INFO/">Démonstration</a>
+                        <a class="flop__btn contrib__btn"
+                           href="{{ path('contributors') }}">Contributeurs</a>
+                    </div>
                 </div>
             </div>
         </div>
