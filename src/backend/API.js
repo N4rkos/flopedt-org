@@ -1,3 +1,4 @@
+import Axios from "axios"
 
 const API_URL = "http://flopedt.org:1337"
 
@@ -18,6 +19,14 @@ class API {
     //     }
     //     return []
     // }
+
+    static async getClients(){
+        const response = await Axios.get(`${API_URL}/clients`)
+        if(response.status === 200){
+            return response.data
+        }
+        return []
+    }
 }
 
 export default API
