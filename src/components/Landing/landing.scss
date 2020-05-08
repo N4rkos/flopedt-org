@@ -1,0 +1,43 @@
+.landing {
+    min-height: 100vh;
+
+    .outer {
+        width: 100%;
+        margin: 50% auto;
+    }
+
+    .right {
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .separator {
+            margin: 10px 0;
+            border-radius: 50px;
+            width: 100px;
+            background: #0c0;
+            height: 5px;
+        }
+    }
+}
+
+.flop-laptop {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+
+    .laptop {
+        width: 100%;
+    }
+
+    .screen {
+        position: absolute;
+        width: 73.1%;
+        height: 92%;
+        background: #000;
+        top: 3.5%;
+        left: 14.8%;
+        z-index: -1;
+    }
+}

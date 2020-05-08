@@ -2,7 +2,7 @@ import React from 'react'
 import './app.scss'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './Footer/Footer'
-import Users from './Users/Users'
+import Landing from './Landing/Landing'
 import Presentation from './Presentation/Presentation'
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
         <Router>
             <Switch>
                 <Route path="/" exact>
+                    <Landing />
                     <Presentation />
-                    <Users />
                     <Footer />
                 </Route>
             </Switch>
