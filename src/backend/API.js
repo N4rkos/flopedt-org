@@ -1,6 +1,7 @@
 import Axios from "axios"
 
 const API_URL = "https://api.flopedt.org"
+const AUTHORS_URL = "http://thomasgouveia.fr/xflop/AUTHORS.txt"
 
 /**
  * Interface entre le front et l'api strapi
@@ -31,10 +32,10 @@ class API {
         if (response.status === 200) {
             let testimonials = response.data
             let randoms = []
-            for(let i = 0; i < testimonials.length; i++) {
-                if(randoms.length === max) break
+            for (let i = 0; i < testimonials.length; i++) {
+                if (randoms.length === max) break
                 let random = testimonials[Math.floor(Math.random() * testimonials.length)]
-                if(randoms.find(e => e.id === random.id) === undefined) {
+                if (randoms.find(e => e.id === random.id) === undefined) {
                     randoms.push(random)
                 }
             }
@@ -47,6 +48,13 @@ class API {
     static async getShowcaseQuestions() {
         const response = await Axios.get(`${API_URL}/questions?showcase=true`)
         if (response.status === 200) return response.data
+        console.error('[ERREUR] : Impossible de récupérer les questions. Code HTTP : ' + response.status)
+        return []
+    }
+
+    static async getContributors() {
+        const response = await Axios.get(`${AUTHORS_URL}`)
+        if (response.status === 200) console.log(response)
         console.error('[ERREUR] : Impossible de récupérer les questions. Code HTTP : ' + response.status)
         return []
     }

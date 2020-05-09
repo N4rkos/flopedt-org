@@ -11,7 +11,17 @@ const Slideshow = () => {
     })
 
     return (
-        <div></div>
+        <section className="flop__screenshots">
+            <div className="container">
+                <h1>Screenshots</h1>
+                <p>Vue d'ensemble de l'application.</p>
+                <div className="row">
+                    {slides.map(slide => (
+                        <div className="col-md-6"><img src={API.getAsset(slide.image[0].url)} alt={slide.id}></img></div>
+                    ))}
+                </div>
+            </div>
+        </section>
         // <section className="flop__screenshots">
         //     {/* <img className="wave__down" src="{{ asset('build/svg/screens_up.svg') }}" alt="" /> */}
         //     <div className="wrapper">

@@ -8,6 +8,7 @@ import Users from './Users/Users'
 import Slideshow from './Slideshow/Slideshow'
 import Testimonials from './Testimonials/Testimonials'
 import Questions from './Questions/Questions'
+import Contributors from './Contributors/Contributors'
 
 const App = () => {
 
@@ -21,9 +22,12 @@ const App = () => {
                     <Users />
                     <Testimonials />
                     <Questions />
-                    <Footer />
+                </Route>
+                <Route path="/contributeurs" exact>
+                    <Contributors />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     )
 }
