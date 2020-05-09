@@ -1,25 +1,19 @@
 @import '../../theme/theme.scss';
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 90%;
-        margin: auto;
-      }
+.flop__screenshots{
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: $green;
+    p{
+      text-align: center;
     }
 
-    .swiper-pagination-bullet-active {
-      background-color: $green;
+    img {
+      max-width: 100%;
     }
-  }
+}

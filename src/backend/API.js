@@ -1,6 +1,7 @@
 import Axios from "axios"
 
 const API_URL = "https://api.flopedt.org"
+const AUTHORS_URL = "http://thomasgouveia.fr/xflop/AUTHORS.txt"
 
 /**
  * Interface entre le front et l'api strapi
@@ -62,6 +63,12 @@ class API {
         const response = await Axios.get(`${API_URL}/question-types`)
         if (response.status === 200) return response.data
         console.error('[ERREUR] : Impossible de récupérer les types de questions. Code HTTP : ' + response.status)
+        return []
+    }
+    static async getContributors() {
+        const response = await Axios.get(`${AUTHORS_URL}`)
+        if (response.status === 200) console.log(response)
+        console.error('[ERREUR] : Impossible de récupérer les questions. Code HTTP : ' + response.status)
         return []
     }
 }
