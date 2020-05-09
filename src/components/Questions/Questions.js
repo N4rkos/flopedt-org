@@ -25,7 +25,7 @@ const Questions = () => {
                     {questions.map(q => <Question key={q.id} question={q} />)}
                 </div>
                 <div className="d-flex justify-content-center">
-                    <a href="/faq" className="flop__btn mt-3">Voir toutes les questions</a>
+                    <Link to="/faq" className="flop__btn mt-3">Voir toutes les questions</Link>
                 </div>
             </div>
         </section>
