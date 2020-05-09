@@ -8,6 +8,7 @@ import Users from './Users/Users'
 import Slideshow from './Slideshow/Slideshow'
 import Testimonials from './Testimonials/Testimonials'
 import Questions from './Questions/Questions'
+import FAQ from './FAQ/FAQ'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
                     <Questions />
                     <Footer />
                 </Route>
+                <Route path="/faq" component={FAQ} />
             </Switch>
         </Router>
     )

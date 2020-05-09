@@ -50,7 +50,7 @@ const Presentation = () => {
                         </div>
                         <div className="col align-center">
                             <div className="row justify-content-center">
-                                <a className="flop__btn demo__btn"
+                                <a className="flop__btn demo__btn mr-3"
                                     href="https://flopedt.iut-blagnac.fr/edt/INFO/">Démonstration</a>
                                 <a className="flop__btn contrib__btn"
                                     href="#">Contributeurs</a>
