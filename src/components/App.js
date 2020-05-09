@@ -22,10 +22,10 @@ const App = () => {
                     <Users />
                     <Testimonials />
                     <Questions />
-                    <Footer />
                 </Route>
                 <Route path="/faq" component={FAQ} />
             </Switch>
+            <Footer />
         </Router>
     )
 }

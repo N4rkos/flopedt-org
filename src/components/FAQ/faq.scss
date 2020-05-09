@@ -1,0 +1,45 @@
+@import "../../theme/theme.scss";
+
+.faq {
+    min-height: 80vh;
+
+    .filters {
+        border: 2px solid rgba(122, 122, 122, 0.082);
+        height: min-content;
+        padding: 15px 15px;
+
+        .search {
+            border: none;
+            padding: 10px 10px;
+            width: 100%;
+            border: 2px solid rgba(122, 122, 122, 0.082);
+            outline: none;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 14px;
+                margin: 5px 0;
+                font-weight: 300;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.filter-active {
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .question-container {
+        h4 {
+            color: $green;
+        }
+    }
+}
