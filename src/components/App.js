@@ -7,6 +7,7 @@ import Presentation from './Presentation/Presentation'
 import Users from './Users/Users'
 import Slideshow from './Slideshow/Slideshow'
 import Testimonials from './Testimonials/Testimonials'
+import Questions from './Questions/Questions'
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
                     <Slideshow />
                     <Users />
                     <Testimonials />
+                    <Questions />
                     <Footer />
                 </Route>
             </Switch>
