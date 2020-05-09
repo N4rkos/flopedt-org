@@ -47,8 +47,7 @@ const FAQ = () => {
                     <div className="col-md-9">
                         {filtered.map(q => (
                             <div className="question-container">
-                                <h4>{q.question}</h4>
-                                <small>Dernière mise à jour : {moment(q.updated_at).format('DD/MM/YYYY')}</small>
+                                <h5>{q.question}</h5>
                                 <p className="mt-2">{q.response}</p>
                             </div>
                         ))}
