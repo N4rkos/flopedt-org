@@ -22,7 +22,7 @@ const Users = () => {
                 </div>
                 <div className="row justify-content-center">
                 {users.map(u => (
-                    <div className="flop__users__card" onClick={() => window.open(`${u.url}`, '_blank')}>
+                    <div key={u.id} className="flop__users__card" onClick={() => window.open(`${u.url}`, '_blank')}>
                         <img src={API.getAsset(u.logo.url)} alt={u.name}/>
                         <div className="flop__users__card__text">
                             <h3>{u.name}</h3>

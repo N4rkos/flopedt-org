@@ -1,6 +1,6 @@
 import Axios from "axios"
 
-const API_URL = "http://flopedt.org:1337"
+const API_URL = "https://api.flopedt.org"
 
 /**
  * Interface entre le front et l'api strapi
@@ -25,6 +25,18 @@ class API {
         if(response.status === 200){
             return response.data
         }
+        return []
+    }
+
+    static async getSlides() {
+        const response = await Axios.get(`${API_URL}/slideshows`)
+        if(response.status === 200) return response.data
+        return []
+    }
+    
+    static async getRandomTestimonials() {
+        const response = await Axios.get(`${API_URL}/testimonials?_limit=3`)
+        if(response.status === 200) return response.data
         return []
     }
 }

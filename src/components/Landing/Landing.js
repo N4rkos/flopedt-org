@@ -17,10 +17,10 @@ const Landing = () => {
                         </div>
                     </div>
                     <div className="col-md-4 right">
-                        <h1><span class="logo-font">flop!EDT</span>, votre emploi du temps personnalisé</h1>
-                        <div class="separator"></div>
+                        <h1><span className="logo-font">flop!EDT</span>, votre emploi du temps personnalisé</h1>
+                        <div className="separator"></div>
                         <p>Vous en avez marre de passer des heures à réaliser un emploi du temps qui convient à tout le monde ?
-                            Découvrez notre gestionnaire d'emploi du temps <strong><span class="flop__red">FL</span>exible</strong> et <strong><span class="flop__green">OP</span>en source</strong> qui fera le travail à votre place.</p>
+                            Découvrez notre gestionnaire d'emploi du temps <strong><span className="flop__red">FL</span>exible</strong> et <strong><span className="flop__green">OP</span>en source</strong> qui fera le travail à votre place.</p>
                     </div>
                 </div>
             </div>

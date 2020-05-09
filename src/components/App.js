@@ -5,6 +5,8 @@ import Footer from './Footer/Footer'
 import Landing from './Landing/Landing'
 import Presentation from './Presentation/Presentation'
 import Users from './Users/Users'
+import Slideshow from './Slideshow/Slideshow'
+import Testimonials from './Testimonials/Testimonials'
 
 const App = () => {
 
@@ -14,7 +16,9 @@ const App = () => {
                 <Route path="/" exact>
                     <Landing />
                     <Presentation />
+                    <Slideshow />
                     <Users />
+                    <Testimonials />
                     <Footer />
                 </Route>
             </Switch>

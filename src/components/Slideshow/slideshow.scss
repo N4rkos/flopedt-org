@@ -1,0 +1,25 @@
+@import '../../theme/theme.scss';
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 90%;
+        margin: auto;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $green;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $green;
+    }
+  }

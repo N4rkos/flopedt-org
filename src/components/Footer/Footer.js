@@ -23,13 +23,13 @@ const Footer = () => {
                         </div>
                         <div className="col-md-4 footer-elem">
                             <h4>Contact</h4>
-                            <a href="mailto:contact@flopedt.org"><i class="far fa-envelope"></i> contact@flopedt.org</a>
+                            <a href="mailto:contact@flopedt.org"><i className="far fa-envelope"></i> contact@flopedt.org</a>
                         </div>
                     </div>
                 </div>
             </footer>
-            <div class="d-flex justify-content-center align-items-center footer-bottom">
-                <span>flop!EDT Copyright &copy; 2020. Made with <i style={{ color: 'red' }} class="fas fa-heart"></i> by Hugo Amalric & Thomas Gouveia.</span>
+            <div className="d-flex justify-content-center align-items-center footer-bottom">
+                <span>flop!EDT Copyright &copy; 2020. Made with <i style={{ color: 'red' }} className="fas fa-heart"></i> by Hugo Amalric & Thomas Gouveia.</span>
             </div>
         </div>
     )
