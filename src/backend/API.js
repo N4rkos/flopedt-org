@@ -43,6 +43,13 @@ class API {
         console.error('[ERREUR] : Impossible de récupérer les témoignages. Code HTTP : ' + response.status)
         return []
     }
+
+    static async getShowcaseQuestions() {
+        const response = await Axios.get(`${API_URL}/questions?showcase=true`)
+        if (response.status === 200) return response.data
+        console.error('[ERREUR] : Impossible de récupérer les questions. Code HTTP : ' + response.status)
+        return []
+    }
 }
 
 export default API
