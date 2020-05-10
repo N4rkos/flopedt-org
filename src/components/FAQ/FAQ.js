@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './faq.scss'
 import API from '../../backend/API'
-import moment from 'moment'
+import ReactMarkdown from 'react-markdown'
 
 const FAQ = () => {
 
@@ -49,7 +49,7 @@ const FAQ = () => {
                             {filtered.map(q => (
                                 <div className="question-container">
                                     <span className="question"><i className="fas fa-question-circle"></i> {q.question}</span>
-                                    <p className="mt-2 response">{q.response || `Aucune réponse n'a été fournie pour cette question.` }</p>
+                                    <p className="mt-2 response"><ReactMarkdown source={q.responseMd} /></p>
                                 </div>
                             ))}
                         </div>
