@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import '../app.scss'
 import './questions.scss'
 import API from '../../backend/API'
-import slugify from 'slugify'
 import { Link } from 'react-router-dom'
 import Question from './Question'
+import { Routes } from '../router'
 
 const Questions = () => {
 
@@ -25,7 +25,7 @@ const Questions = () => {
                     {questions.map(q => <Question key={q.id} question={q} />)}
                 </div>
                 <div className="d-flex justify-content-center">
-                    <Link to="/faq" className="flop__btn mt-3">Voir toutes les questions</Link>
+                    <Link to={Routes.faq} className="flop__btn mt-3">Voir toutes les questions</Link>
                 </div>
             </div>
         </section>

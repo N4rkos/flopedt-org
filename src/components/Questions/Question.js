@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown'
 import randomstring from 'randomstring'
 
 
-
 const Question = ({ question }) => {
 
     const q = question

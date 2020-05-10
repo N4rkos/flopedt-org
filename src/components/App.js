@@ -11,13 +11,14 @@ import Questions from './Questions/Questions'
 import FAQ from './FAQ/FAQ'
 import Contributors from './Contributors/Contributors'
 import NotFound from './404/NotFound'
+import { Routes } from './router'
 
 const App = () => {
 
     return (
         <Router>
             <Switch>
-                <Route path="/" exact>
+                <Route path={Routes.home} exact>
                     <Landing />
                     <Presentation />
                     <Slideshow />
@@ -25,9 +26,9 @@ const App = () => {
                     <Testimonials />
                     <Questions />
                 </Route>
-                <Route path="/contributeurs" component={Contributors} />
-                <Route path="/faq" component={FAQ} />
-                <Route path="*" component={NotFound} />
+                <Route path={Routes.contributors} component={Contributors} />
+                <Route path={Routes.faq} component={FAQ} />
+                <Route path={Routes.notFound} component={NotFound} />
             </Switch>
             <Footer />
         </Router>
