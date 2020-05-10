@@ -10,6 +10,7 @@ import Testimonials from './Testimonials/Testimonials'
 import Questions from './Questions/Questions'
 import FAQ from './FAQ/FAQ'
 import Contributors from './Contributors/Contributors'
+import NotFound from './404/NotFound'
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
                 </Route>
                 <Route path="/contributeurs" component={Contributors} />
                 <Route path="/faq" component={FAQ} />
+                <Route path="*" component={NotFound} />
             </Switch>
             <Footer />
         </Router>
