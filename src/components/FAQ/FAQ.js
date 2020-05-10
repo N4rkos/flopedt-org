@@ -45,12 +45,14 @@ const FAQ = () => {
                         </div>
                     </div>
                     <div className="col-md-9">
-                        {filtered.map(q => (
-                            <div className="question-container">
-                                <h5>{q.question}</h5>
-                                <p className="mt-2">{q.response}</p>
-                            </div>
-                        ))}
+                        <div className="content">
+                            {filtered.map(q => (
+                                <div className="question-container">
+                                    <span className="question"><i className="fas fa-question-circle"></i> {q.question}</span>
+                                    <p className="mt-2 response">{q.response || `Aucune réponse n'a été fournie pour cette question.` }</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

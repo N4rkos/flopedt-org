@@ -2,6 +2,12 @@
 
 .faq {
     min-height: 80vh;
+    position: relative;
+
+    .content {
+        border: 2px solid rgba(122, 122, 122, 0.082);
+        padding: 15px 15px;
+    }
 
     .filters {
         border: 2px solid rgba(122, 122, 122, 0.082);
@@ -38,8 +44,20 @@
     }
 
     .question-container {
-        h4 {
+        border: 2px solid rgba(122, 122, 122, 0.082);
+        padding: 15px 15px;
+        margin: 20px 0;
+
+        i {
             color: $green;
+        }
+
+        .question {
+            font-weight: 400;
+        }
+
+        .response {
+            font-weight: 300;
         }
     }
 }
