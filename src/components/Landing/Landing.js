@@ -3,11 +3,13 @@ import './landing.scss'
 //Images
 import landingScreen from '../../assets/images/flop_landing_screen.png'
 import laptop from '../../assets/images/laptop.png'
+import landingWave from '../../assets/svg/landing.svg'
 
 const Landing = () => {
 
     return (
         <section className="landing" style={{ marginTop: '-80px' }}>
+            <img className="wave" src={landingWave}></img>
             <div className="container d-flex flex-column justify-content-center align-items-center">
                 <div className="outer row d-flex align-items-center">
                     <div className="col-md-8">

@@ -1,5 +1,11 @@
 .landing {
     min-height: 100vh;
+    position: relative;
+    .wave {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
 
     .outer {
         height: 100vh;

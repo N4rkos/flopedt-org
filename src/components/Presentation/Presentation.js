@@ -3,11 +3,13 @@ import '../app.scss'
 import './presentation.scss'
 import { Link } from 'react-router-dom'
 import { Routes } from '../router'
+import presentationWave from '../../assets/svg/presentation.svg'
 
 const Presentation = () => {
 
     return (
         <section className="flop__presentation">
+            {/* <div className="wave"></div> */}
             <div className="container">
                 <div className="flop__presentation__content">
                     <div className="top__content">

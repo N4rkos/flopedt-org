@@ -1,62 +1,65 @@
 .flop__users {
-    height: auto;
-    padding-bottom: 50px;
-    position: relative;
+  height: auto;
+  padding: 50px 0;
+  position: relative;
+  width: 100%;
+  background: #2a2a2a;
+  color: #c9ccdb;
+  text-align: center;
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
-   
-    .top__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 30%;
-      margin-top: 30px;
-  
-      p {
-        text-align: center;
-      }
-  
-      h1 {
-        font-size: 40px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-bottom: 30px;
-      }
+    height: 30%;
+    margin-top: 30px;
+
+    p {
+      text-align: center;
     }
-  
-    .flop__users__card {
-      cursor: pointer;
-      margin-top: 50px;
-      width: 200px;
-      background: #fff;
-      padding: 30px 30px;
-      border-radius: 1%;
-      -moz-box-shadow: 2px 2px 5px 0px #cfcfcf;
-      -webkit-box-shadow: 2px 2px 5px 0px #cfcfcf;
-      -o-box-shadow: 2px 2px 5px 0px #cfcfcf;
-      box-shadow: 2px 2px 5px 0px #cfcfcf;
-      transition: transform ease-in-out 0.3s;
-      &:hover {
-        transform: scale(1.1);
-      }
-      img {
-        width: 100px;
-        margin-top: 30px;
-      }
-      h3 {
-        font-weight: bold;
-        font-size: 20px;
-      }
-      p {
-        color: #5c5c5c;
-        font-weight: 500;
-        margin-top: 10px;
-      }
-      .flop__users__card__text {
-        margin-top: 50px;
-      }
+
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #fff;
     }
   }
-  
+
+  .flop__users__card {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 200px;
+    background: #333;
+    padding: 30px 30px;
+    border-radius: 1%;
+    // -moz-box-shadow: 2px 2px 5px 0px #333;
+    // -webkit-box-shadow: 2px 2px 5px 0px #333;
+    // -o-box-shadow: 2px 2px 5px 0px #333;
+    // box-shadow: 2px 2px 5px 0px #333;
+    transition: transform ease-in-out 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100px;
+      margin-top: 30px;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+    }
+    p {
+      color: #5c5c5c;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .flop__users__card__text {
+      margin-top: 50px;
+    }
+  }
+}
