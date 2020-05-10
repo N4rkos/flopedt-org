@@ -24,9 +24,7 @@ const App = () => {
                     <Testimonials />
                     <Questions />
                 </Route>
-                <Route path="/contributeurs" exact>
-                    <Contributors />
-                </Route>
+                <Route path="/contributeurs" component={Contributors} />
                 <Route path="/faq" component={FAQ} />
             </Switch>
             <Footer />
