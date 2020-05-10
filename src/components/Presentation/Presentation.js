@@ -15,7 +15,7 @@ const Presentation = () => {
                         <p>Définissez vos contraintes et préférences, flop!EDT se chargera de fabriquer automatiquement le
                         meilleur emploi du temps possible. Si par malheur il n’est pas parfait, il sera possible à
                     chacun⋅e de le modifier !</p>
-                        <span className="flop__situation"><i class="fas fa-exclamation-triangle"></i> Logiciel en bêta, peut contenir certains <i class="fas fa-exclamation-triangle"></i></span>
+                        <span className="flop__situation"><i class="fas fa-exclamation-triangle"></i> Logiciel en bêta, peut contenir certains bugs </span>
                     </div>
                     <div className="bottom__content row justify-content-center">
                         <i className="fab fa-modx"></i>
