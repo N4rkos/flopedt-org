@@ -40,14 +40,14 @@ const FAQ = () => {
                             <h6>Types</h6>
                             <ul>
                                 <li className="filter-active" onClick={(e) => handleFilterChanged(e, questions)}>Toutes les questions ({questions.length})</li>
-                                {questionsTypes.map(type => <li onClick={(e) => handleFilterChanged(e, type.questions)}>{type.type} ({type.questions.length})</li>)}
+                                {questionsTypes.map(type => <li key={type.id} onClick={(e) => handleFilterChanged(e, type.questions)}>{type.type} ({type.questions.length})</li>)}
                             </ul>
                         </div>
                     </div>
                     <div className="col-md-9">
                         <div className="content">
                             {filtered.map(q => (
-                                <div className="question-container">
+                                <div key={q.id} className="question-container">
                                     <span className="question"><i className="fas fa-question-circle"></i> {q.question}</span>
                                     <p className="mt-2 response"><ReactMarkdown source={q.responseMd} /></p>
                                 </div>

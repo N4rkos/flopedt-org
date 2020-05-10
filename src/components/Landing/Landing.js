@@ -7,7 +7,7 @@ import laptop from '../../assets/images/laptop.png'
 const Landing = () => {
 
     return (
-        <section className="landing">
+        <section className="landing" style={{ marginTop: '-80px' }}>
             <div className="container d-flex flex-column justify-content-center align-items-center">
                 <div className="outer row d-flex align-items-center">
                     <div className="col-md-8">
