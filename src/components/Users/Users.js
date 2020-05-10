@@ -14,7 +14,7 @@ const Users = () => {
     }, [])
 
     return (
-        <section className ="flop__users">
+        <section className ="flop__users shadow">
             <div className="container">
                 <div className="top__content">
                     <h1>Ils utilisent flop!EDT</h1>
