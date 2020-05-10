@@ -1,5 +1,6 @@
 import React from 'react'
-var randomstring = require("randomstring");
+import ReactMarkdown from 'react-markdown'
+import randomstring from 'randomstring'
 
 
 const Question = ({ question }) => {
@@ -20,7 +21,7 @@ const Question = ({ question }) => {
             </div>
             <div id={`${ustring}`} class="collapse" aria-labelledby={`heading${q.id}`} data-parent="#accordionQuestions">
                 <div class="card-body">
-                    <p>{q.response}</p>
+                    <p><ReactMarkdown source={q.responseMd} /></p>
                 </div>
             </div>
         </div>
