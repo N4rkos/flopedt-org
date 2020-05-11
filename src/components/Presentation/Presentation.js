@@ -8,7 +8,7 @@ import presentationWave from '../../assets/svg/presentation.svg'
 const Presentation = () => {
 
     return (
-        <section className="flop__presentation">
+        <section id="presentation" className="flop__presentation">
             {/* <div className="wave"></div> */}
             <div className="container">
                 <div className="flop__presentation__content">
