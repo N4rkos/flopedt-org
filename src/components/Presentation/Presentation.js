@@ -49,7 +49,7 @@ const Presentation = () => {
                     <div className="col align-center">
                         <div className="row justify-content-center">
                             <a className="flop__btn demo__btn mr-3"
-                                href="https://flopedt.iut-blagnac.fr/edt/INFO/"
+                                href="http://flopedt-dev.iut-blagnac.fr/edt/INFO/2019/45"
                                 target="_blank">Démonstration</a>
                             <Link to={Routes.contributors} target="_blank" className="flop__btn contrib__btn">Contributeurs</Link>
                         </div>

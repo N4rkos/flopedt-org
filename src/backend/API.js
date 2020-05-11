@@ -35,9 +35,7 @@ class API {
             for (let i = 0; i < testimonials.length; i++) {
                 if (randoms.length === max) break
                 let random = testimonials[Math.floor(Math.random() * testimonials.length)]
-                if (randoms.find(e => e.id === random.id) === undefined) {
-                    randoms.push(random)
-                }
+                if (randoms.find(e => e.id === random.id) === undefined) randoms.push(random)
             }
             return randoms
         }
@@ -65,6 +63,7 @@ class API {
         console.error('[ERREUR] : Impossible de récupérer les types de questions. Code HTTP : ' + response.status)
         return []
     }
+
     static async getContributors() {
         const response = await Axios.get(`${AUTHORS_URL}`)
         if (response.status === 200) console.log(response)

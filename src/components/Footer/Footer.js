@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-4 footer-elem">
                             <h4>flop!EDT</h4>
-                            <p>flop!EDT est un logiciel de création et de gestion d'emploi du temps gratuit, libre et open source en développement. Il a été conçu par des professeurs de l'IUT de Blagnac et est distribué sous licence AGPLv3.</p>
+                            <p>flop!EDT est un logiciel libre de génération automatique et de gestion coopérative des emplois du temps (scolaires ou planning de salarié⋅e⋅s). Il est distribué sous licence AGPLv3.</p>
                         </div>
                         <div className="col-md-4 footer-elem">
                             <h4>Liens rapides</h4>
