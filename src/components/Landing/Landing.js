@@ -10,6 +10,7 @@ const Landing = () => {
     return (
         <section className="landing" style={{ marginTop: '-80px' }}>
             <img className="wave" src={landingWave}></img>
+            <a href="#presentation" className="view-more">Voir plus</a>
             <div className="container d-flex flex-column justify-content-center align-items-center">
                 <div className="outer row d-flex align-items-center">
                     <div className="col-md-8">
