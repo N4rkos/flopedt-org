@@ -27,9 +27,13 @@ const FAQ = () => {
 
     return (
         <section className="faq my-5">
-            <div className="container">
-                <h1>Foire aux questions</h1>
-                <p>Bienvenue sur la foire aux questions flop!EDT. Retrouvez toutes les questions que nous recevons fréquemment ainsi que leur réponse. Si votre question ne se trouve pas dans la FAQ, veuillez nous adressez un mail, nous vous répondrons et l'ajouterons.</p>
+            <div className="top">
+                <div className="container">
+                    <h1>Foire aux questions</h1>
+                    <p>Bienvenue sur la foire aux questions flop!EDT. Retrouvez toutes les questions que nous recevons fréquemment ainsi que leur réponse. Si votre question ne se trouve pas dans la FAQ, veuillez nous adressez un mail, nous vous répondrons et l'ajouterons.</p>
+                </div>
+            </div>
+            <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-3 filters mb-3">
                         <div>

@@ -12,6 +12,7 @@ const Tutorial = () => {
         const slug = window.location.pathname.split('/').pop()
         API.getTutorialBySlug(slug).then(setTutorial)
     }, [])
+    
     document.title = `${tutorial.title} | FlopEDT`
     const shareUrl = window.location.href
     return (
