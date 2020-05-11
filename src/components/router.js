@@ -5,5 +5,12 @@ export const Routes = {
     home: '/',
     faq: '/foire-aux-questions',
     contributors: '/contributeurs',
-    notFound: '*'
+    notFound: '*',
+    blog: {
+        index: '/blog',
+        tutorials: {
+            index: '/blog/tutoriels',
+            view: '/blog/tutoriels/:slug'
+        }
+    },
 }

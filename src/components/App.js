@@ -14,13 +14,16 @@ import NotFound from './404/NotFound'
 import { Routes } from './router'
 import Navbar from './Navigation/Navbar'
 import ScrollTop from './ScrollTop/ScrollTop'
+import Blog from './Blog/Blog'
+import Tutoriels from './Blog/Tutoriels/Tutoriels'
+import Tutorial from './Blog/Tutoriels/Tutorial'
 const App = () => {
-
+    //document.title = "FlopEDT | Gestionnaire d'emploi du temps flexible et open source"
     return (
         <Router>
             <ScrollTop />
             <Navbar />
-            <div style={{marginTop: '80px'}}>
+            <div style={{ marginTop: '80px' }}>
                 <Switch>
                     <Route path={Routes.home} exact>
                         <Landing />
@@ -32,6 +35,9 @@ const App = () => {
                     </Route>
                     <Route path={Routes.contributors} component={Contributors} />
                     <Route path={Routes.faq} component={FAQ} />
+                    {/* <Route path={Routes.blog.index} exact component={Blog} /> */}
+                    <Route path={Routes.blog.tutorials.index} exact component={Tutoriels} />
+                    <Route path={Routes.blog.tutorials.view} component={Tutorial} />
                     <Route path={Routes.notFound} component={NotFound} />
                 </Switch>
             </div>

@@ -70,6 +70,21 @@ class API {
         console.error('[ERREUR] : Impossible de récupérer les questions. Code HTTP : ' + response.status)
         return []
     }
+
+    static async getTutorials() {
+        const response = await Axios.get(`${API_URL}/tutorials?published=true`)
+        if (response.status === 200) return response.data
+        console.error('[ERREUR] : Impossible de récupérer les tutoriels. Code HTTP : ' + response.status)
+        return []
+    }
+
+    static async getTutorialBySlug(slug) {
+        const id = slug.split('-')[0]
+        const response = await Axios.get(`${API_URL}/tutorials/${id}`)
+        if (response.status === 200) return response.data
+        console.error('[ERREUR] : Impossible de récupérer le tutoriel ' + slug + ' Code HTTP : ' + response.status)
+        return {}
+    }
 }
 
 export default API

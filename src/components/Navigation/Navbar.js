@@ -47,6 +47,7 @@ const Navbar = () => {
                 <ul>
                     <li><Link onClick={setActive} to={Routes.home} className="nav-links nav-active">Accueil</Link></li>
                     <li><Link onClick={setActive} to={Routes.faq} className="nav-links">FAQ</Link></li>
+                    <li><Link onClick={setActive} to={Routes.blog.tutorials.index} className="nav-links">Tutoriels</Link></li>
                     {/* <li><a className="contact-link shadow">Contact</a></li> */}
                 </ul>
             </div>
