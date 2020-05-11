@@ -72,7 +72,7 @@ class API {
     }
 
     static async getTutorials() {
-        const response = await Axios.get(`${API_URL}/tutorials?published=true`)
+        const response = await Axios.get(`${API_URL}/tutorials?published=true&_sort=updated_at:DESC`)
         if (response.status === 200) return response.data
         console.error('[ERREUR] : Impossible de récupérer les tutoriels. Code HTTP : ' + response.status)
         return []

@@ -19,6 +19,20 @@
 }
 
 .article {
+
+    blockquote{
+        padding-left: 5px;
+        border-left: 5px solid #00cc00;
+    }
+
+    ol {
+        font-weight: 300;
+        li {
+            margin-left: 15px;
+        }
+    }
+
+
     h1 {
         font-weight: bold;
     }
