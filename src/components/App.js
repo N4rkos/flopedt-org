@@ -13,11 +13,12 @@ import Contributors from './Contributors/Contributors'
 import NotFound from './404/NotFound'
 import { Routes } from './router'
 import Navbar from './Navigation/Navbar'
-
+import ScrollTop from './ScrollTop/ScrollTop'
 const App = () => {
 
     return (
         <Router>
+            <ScrollTop />
             <Navbar />
             <div style={{marginTop: '80px'}}>
                 <Switch>
