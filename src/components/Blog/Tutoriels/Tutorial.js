@@ -13,7 +13,7 @@ const Tutorial = () => {
         API.getTutorialBySlug(slug).then(setTutorial)
     }, [])
     document.title = `${tutorial.title} | FlopEDT`
-    const shareUrl = "https://flopedt.org" + window.location.pathname;
+    const shareUrl = window.location.href
     return (
         <div className="container article">
             <img alt={`${tutorial.title} thumbnail`} src={API.getAsset(tutorial.thumbnail ? tutorial.thumbnail.url : '')}></img>
