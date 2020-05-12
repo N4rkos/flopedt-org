@@ -34,7 +34,7 @@ const App = () => {
                         <Questions />
                     </Route>
                     <Route path={Routes.contributors} component={Contributors} />
-                    <Route path={Routes.faq} component={FAQ} />
+                    <Route path={Routes.blog.faq.index} component={FAQ} />
                     {/* <Route path={Routes.blog.index} exact component={Blog} /> */}
                     <Route path={Routes.blog.tutorials.index} exact component={Tutoriels} />
                     <Route path={Routes.blog.tutorials.view} component={Tutorial} />

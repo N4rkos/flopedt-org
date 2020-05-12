@@ -3,7 +3,6 @@
  */
 export const Routes = {
     home: '/',
-    faq: '/foire-aux-questions',
     contributors: '/contributeurs',
     notFound: '*',
     blog: {
@@ -11,6 +10,9 @@ export const Routes = {
         tutorials: {
             index: '/blog/tutoriels',
             view: '/blog/tutoriels/:slug'
+        },
+        faq: {
+            index: '/blog/foire-aux-questions'
         }
     },
 }
