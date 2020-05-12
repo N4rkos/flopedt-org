@@ -85,6 +85,13 @@ class API {
         console.error('[ERREUR] : Impossible de récupérer le tutoriel ' + slug + ' Code HTTP : ' + response.status)
         return {}
     }
+
+    static async getLegals() {
+        const response = await Axios.get(`${API_URL}/mentions-legales`)
+        if (response.status === 200) return response.data
+        console.error('[ERREUR] : Impossible de récupérer les mentions légales. Code HTTP : ' + response.status)
+        return {}
+    }
 }
 
 export default API

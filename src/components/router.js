@@ -5,6 +5,7 @@ export const Routes = {
     home: '/',
     contributors: '/contributeurs',
     notFound: '*',
+    legals: '/mentions-legales',
     blog: {
         index: '/blog',
         tutorials: {

@@ -1,5 +1,7 @@
 import React from 'react'
 import './footer.scss'
+import { Link } from 'react-router-dom'
+import { Routes } from '../router'
 
 const Footer = () => {
 
@@ -15,15 +17,16 @@ const Footer = () => {
                         <div className="col-md-4 footer-elem">
                             <h4>Liens rapides</h4>
                             <ul>
-                                <li><a href="">flop!EDT</a></li>
-                                <li><a href="">Contributeurs</a></li>
-                                <li><a href="">Aperçu</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li><Link to={Routes.home}>flop!EDT</Link></li>
+                                <li><Link to={Routes.blog.faq.index}>FAQ</Link></li>
+                                <li><Link to={Routes.blog.tutorials.index}>Tutoriels</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-4 footer-elem">
                             <h4>Contact</h4>
                             <a href="mailto:contact@flopedt.org"><i className="far fa-envelope"></i> contact@flopedt.org</a>
+                            <h4 className="mt-3">Infos pratiques</h4>
+                            <Link to={Routes.legals}>Mentions légales</Link>
                         </div>
                     </div>
                 </div>

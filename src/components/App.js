@@ -17,6 +17,7 @@ import ScrollTop from './ScrollTop/ScrollTop'
 import Blog from './Blog/Blog'
 import Tutoriels from './Blog/Tutoriels/Tutoriels'
 import Tutorial from './Blog/Tutoriels/Tutorial'
+import Legals from './Legals/Legals'
 const App = () => {
     //document.title = "FlopEDT | Gestionnaire d'emploi du temps flexible et open source"
     return (
@@ -38,6 +39,7 @@ const App = () => {
                     {/* <Route path={Routes.blog.index} exact component={Blog} /> */}
                     <Route path={Routes.blog.tutorials.index} exact component={Tutoriels} />
                     <Route path={Routes.blog.tutorials.view} component={Tutorial} />
+                    <Route path={Routes.legals} component={Legals} />
                     <Route path={Routes.notFound} component={NotFound} />
                 </Switch>
             </div>

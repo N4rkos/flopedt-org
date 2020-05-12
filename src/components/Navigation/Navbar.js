@@ -11,6 +11,7 @@ const Navbar = () => {
             document.getElementById('menu-icon').classList.toggle('change');
             document.getElementById('navbar').classList.toggle('change');
         });
+        //checkPath()
     })
 
     window.addEventListener('scroll', function () {
@@ -35,6 +36,25 @@ const Navbar = () => {
         e.target.classList.add('nav-active')
         document.getElementById('menu-icon').click()
     }
+
+    // const checkPath = () => {
+        
+    //     document.querySelector('.nav-active').classList.remove('nav-active')
+    //     const host = window.location.host
+    //     const url = window.location.pathname
+    //     console.log(url)
+    //     if (url == "/") {
+    //         document.querySelector(`a[href="www.${host}"]`).classList.add('nav-active')
+    //     }
+    //     const links = document.querySelectorAll('a.nav-links')
+    //     for (const link of links) {
+    //         const path = link.getAttribute('href')
+    //         if (path.includes(url)) {
+    //             link.classList.add('nav-active')
+    //             return
+    //         }
+    //     }
+    // }
 
     return (
         <div id="navbar" className="flop__navbar d-flex align-items-center justify-content-between">
