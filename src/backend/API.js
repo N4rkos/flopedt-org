@@ -92,6 +92,16 @@ class API {
         console.error('[ERREUR] : Impossible de récupérer les mentions légales. Code HTTP : ' + response.status)
         return {}
     }
+
+    static async addToNewsletter(email) {
+        try {
+            const response = await Axios.post(`${API_URL}/newsletters`, { email: email })
+            return response.statusText
+        } catch (e) {
+            console.error('[ERREUR] : Impossible d\'ajouter le mail dans la newsletter. Erreur : ' + e)
+            return 'ERROR'
+        }
+    }
 }
 
 export default API

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../app.scss'
 import './presentation.scss'
 import { Link } from 'react-router-dom'
 import { Routes } from '../router'
-import presentationWave from '../../assets/svg/presentation.svg'
 
 const Presentation = () => {
 

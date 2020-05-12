@@ -17,7 +17,7 @@ const Questions = () => {
     }, [])
 
     return (
-        <section className="flop__questions">
+        <section className="flop__questions shadow">
             <div className="container">
                 <h1>Foire aux questions</h1>
                 <p>Nos questions les plus fréquentes.</p>

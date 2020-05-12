@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div>
-            <footer>
+            <footer className="shadow">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 footer-elem">

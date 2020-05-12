@@ -1,0 +1,23 @@
+@import '../../theme/theme.scss';
+
+.newsletter-subscription {
+    padding: 50px 0;
+    text-align: center;
+
+    .form {
+        width: 60%;
+        margin: auto;
+
+        input {
+            padding: 8px 16px;
+            border: 2px solid rgba(122, 122, 122, 0.082);
+        }
+
+        button {
+            padding: 8px 16px;
+            background: $green;
+            color: #fff;
+            border: none;
+        }
+    }
+}

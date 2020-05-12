@@ -14,10 +14,11 @@ import NotFound from './404/NotFound'
 import { Routes } from './router'
 import Navbar from './Navigation/Navbar'
 import ScrollTop from './ScrollTop/ScrollTop'
-import Blog from './Blog/Blog'
+// import Blog from './Blog/Blog'
 import Tutoriels from './Blog/Tutoriels/Tutoriels'
 import Tutorial from './Blog/Tutoriels/Tutorial'
 import Legals from './Legals/Legals'
+import Newsletter from './Newsletter/Newsletter'
 const App = () => {
     //document.title = "FlopEDT | Gestionnaire d'emploi du temps flexible et open source"
     return (
@@ -33,6 +34,7 @@ const App = () => {
                         <Users />
                         <Testimonials />
                         <Questions />
+                        <Newsletter />
                     </Route>
                     <Route path={Routes.contributors} component={Contributors} />
                     <Route path={Routes.blog.faq.index} component={FAQ} />
