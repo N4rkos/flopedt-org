@@ -39,7 +39,7 @@ const Navbar = () => {
     return (
         <div id="navbar" className="flop__navbar d-flex align-items-center justify-content-between">
             <div className="flop__navbar__brand">
-                <Link to={Routes.home}><h1 className="flop__logo logo-font">
+                <Link onClick={setActive} to={Routes.home}><h1 className="flop__logo logo-font">
                     <span className="flop__green logo-font">flop</span>!<span className="flop__red logo-font">EDT</span>
                 </h1></Link>
             </div>
