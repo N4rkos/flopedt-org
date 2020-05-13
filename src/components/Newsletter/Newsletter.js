@@ -35,7 +35,7 @@ const Newsletter = () => {
                         S'inscrire
                     </button>
                 </div>
-                <small>Votre email sera stocké dans un espace sécurisé.</small><br></br>
+                <small><i className="fas fa-lock"></i> Votre email sera stocké dans un espace sécurisé.</small><br></br>
                 {status.isError !== null && <small className={status.isError ? 'flop__red' : 'flop__green'}>{status.payload}</small>}
             </div>
         </section>
