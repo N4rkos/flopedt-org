@@ -102,6 +102,13 @@ class API {
             return 'ERROR'
         }
     }
+
+    static async getPrivacy() {
+        const response = await Axios.get(`${API_URL}/politique-de-confidentialite`)
+        if (response.status === 200) return response.data
+        console.error('[ERREUR] : Impossible de récupérer la politique de confidentialite. Code HTTP : ' + response.status)
+        return {}
+    }
 }
 
 export default API

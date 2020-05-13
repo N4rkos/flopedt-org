@@ -26,7 +26,14 @@ const Footer = () => {
                             <h4>Contact</h4>
                             <a href="mailto:contact@flopedt.org"><i className="far fa-envelope"></i> contact@flopedt.org</a>
                             <h4 className="mt-3">Infos pratiques</h4>
-                            <Link to={Routes.legals}>Mentions légales</Link>
+                            <ul>
+                                <li>
+                                    <Link to={Routes.legals}>Mentions légales</Link>
+                                </li>
+                                <li>
+                                    <Link to={Routes.privacy}>Politique de confidentialité</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

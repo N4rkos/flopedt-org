@@ -6,6 +6,7 @@ export const Routes = {
     contributors: '/contributeurs',
     notFound: '*',
     legals: '/mentions-legales',
+    privacy: '/confidentialite',
     blog: {
         index: '/blog',
         tutorials: {
