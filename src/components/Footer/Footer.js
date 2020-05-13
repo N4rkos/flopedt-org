@@ -28,10 +28,10 @@ const Footer = () => {
                             <h4 className="mt-3">Infos pratiques</h4>
                             <ul>
                                 <li>
-                                    <Link to={Routes.legals}>Mentions légales</Link>
+                                    <Link to={Routes.legals}><small>Mentions légales</small></Link>
                                 </li>
                                 <li>
-                                    <Link to={Routes.privacy}>Politique de confidentialité</Link>
+                                    <Link to={Routes.privacy}><small>Politique de confidentialité</small></Link>
                                 </li>
                             </ul>
                         </div>
