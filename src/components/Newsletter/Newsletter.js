@@ -11,13 +11,16 @@ const Newsletter = () => {
     })
 
     const createEntry = async e => {
-        if (email !== '') {
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (email !== '' && re.test(email)) {
             const response = await API.addToNewsletter(email)
             if (response != 'ERROR') {
                 setStatus({ isError: false, payload: 'Votre mail a bien été enregistré dans notre newsletter !' })
             } else {
-                setStatus({ isError: true, payload: "Il y a eu un problème lors de l'enregistrement de votre adresse. Veuillez réessayer, si le problème persiste, contactez-nous." })
+                setStatus({ isError: true, payload: "Vous êtes déjà inscrit à notre newsletter." })
             }
+        } else {
+            setStatus({ isError: true, payload: "Merci d'entrer une adresse mail valide." })
         }
     }
 
@@ -33,7 +36,7 @@ const Newsletter = () => {
                     </button>
                 </div>
                 <small>Votre email sera stocké dans un espace sécurisé.</small><br></br>
-                {status.isError !== null && <span className={status.isError ? 'flop__red' : 'flop__green'}>{status.payload}</span>}
+                {status.isError !== null && <small className={status.isError ? 'flop__red' : 'flop__green'}>{status.payload}</small>}
             </div>
         </section>
     )
