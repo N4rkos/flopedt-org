@@ -4,12 +4,12 @@ import API from '../../backend/API'
 
 const Slideshow = () => {
 
-    const [slides, setSlides] = useState([])
+    const [slides, setSlides] = useState(null)
 
     useEffect(() => {
-        API.getSlides().then(setSlides)
+        if (!slides) API.getSlides().then(setSlides)
     })
-
+    if (!slides) return <div></div>
     return (
         <section className="flop__screenshots my-5">
             <div className="container">
