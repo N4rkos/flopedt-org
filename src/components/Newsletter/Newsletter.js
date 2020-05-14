@@ -14,7 +14,7 @@ const Newsletter = () => {
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (email !== '' && re.test(email)) {
             const response = await API.addToNewsletter(email)
-            if (response != 'ERROR') {
+            if (response !== 'ERROR') {
                 setStatus({ isError: false, payload: 'Votre mail a bien été enregistré dans notre newsletter !' })
             } else {
                 setStatus({ isError: true, payload: "Vous êtes déjà inscrit à notre newsletter." })

@@ -38,3 +38,18 @@ html  {
         transform: translateY(-10px);
     }
 }
+
+.framagit-btn {
+    background: #2A2961;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: .6s ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #4B4CA3;
+    }
+}

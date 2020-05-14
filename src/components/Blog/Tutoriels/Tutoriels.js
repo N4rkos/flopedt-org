@@ -28,7 +28,7 @@ const Tutoriels = () => {
                     <div className="col-md-9">
                         {tutorials.map(tuto => (
                             <div className="tutorial">
-                                <img className="thumbnail" src={API.getAsset(tuto.thumbnail.url)}></img>
+                                <img alt={tuto.title} className="thumbnail" src={API.getAsset(tuto.thumbnail.url)}></img>
                                 <h5>{tuto.title}</h5>
                                 <p><small>{tuto.extract}</small></p>
                                 <div className="d-flex justify-content-between align-items-center">
