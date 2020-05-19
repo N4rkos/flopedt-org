@@ -11,6 +11,7 @@ const Legals = () => {
         API.getLegals().then(setLegals)
     }, [])
 
+    document.title = 'Mentions légales | flop!EDT'
     const url = `https://${legals.domain}`
     return (
         <section className="legals">
@@ -19,7 +20,7 @@ const Legals = () => {
                     <h1>Mentions légales</h1>
                     <p>
                         <p>Cette page recense toutes les informations légales à propos de notre site internet.</p>
-                        <small>Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/">Mentions légales</a></small>
+                        <small>Le modèle de mentions légales est offert par Subdelirium.com <a rel="noopener noreferrer" target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/">Mentions légales</a></small>
                     </p>
                 </div>
             </div>

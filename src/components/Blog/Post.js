@@ -3,6 +3,7 @@ import API from '../../backend/API'
 import ReactMarkdown from 'react-markdown'
 
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, LinkedinShareButton, LinkedinIcon, EmailShareButton, EmailIcon } from 'react-share'
+import { Redirect } from 'react-router-dom'
 
 const Post = () => {
 
@@ -13,7 +14,7 @@ const Post = () => {
         const id = slugger[slugger.length - 2]
         API.getNewsById(id).then(setPost)
     }, [])
-    
+
     document.title = `${post.title} | FlopEDT`
     const shareUrl = window.location.href
     return (

@@ -11,6 +11,7 @@ const Privacy = () => {
         API.getPrivacy().then(setPrivacy)
     }, [])
 
+    document.title = 'Politique de confidentialité | flop!EDT'
     return (
         <section className="privacy">
             <div className="top">

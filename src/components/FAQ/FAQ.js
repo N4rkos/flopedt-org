@@ -25,6 +25,7 @@ const FAQ = () => {
         clicked.classList.add('filter-active')
     }
 
+    document.title = 'Foire aux questions | flop!EDT'
     return (
         <section className="faq my-5">
             <div className="top">

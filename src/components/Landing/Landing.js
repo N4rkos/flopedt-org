@@ -9,14 +9,14 @@ const Landing = () => {
 
     return (
         <section className="landing" style={{ marginTop:  '-70px'}}>
-            <img className="wave" src={landingWave}></img>
+            <img alt="wave" className="wave" src={landingWave}></img>
             <a href="#presentation" className="view-more">Voir plus</a>
             <div className="container d-flex flex-column justify-content-center align-items-center">
                 <div className="outer row d-flex align-items-center">
                     <div className="col-md-8">
                         <div className="flop-laptop">
-                            <img className="laptop" src={laptop}></img>
-                            <img className="screen" src={landingScreen}></img>
+                            <img alt="laptop" className="laptop" src={laptop}></img>
+                            <img alt="screen" className="screen" src={landingScreen}></img>
                         </div>
                     </div>
                     <div className="col-md-4 right">

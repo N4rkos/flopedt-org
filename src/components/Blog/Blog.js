@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './blog.scss'
 import API from '../../backend/API'
-import ReactMarkdown from 'react-markdown'
 import { Routes } from '../router'
 import { Link } from 'react-router-dom'
 import slugify from 'slugify'
-import moment from 'moment'
 
 const Blog = () => {
 
@@ -15,6 +13,7 @@ const Blog = () => {
         API.getNews().then(setArticles)
     }, [])
 
+    document.title = 'Blog | flop!EDT'
     return (
         <section className="blog">
             <div className="blog-header shadow">
@@ -28,7 +27,7 @@ const Blog = () => {
                     {articles.map(article => (
                         <div className="col-md-4">
                             <div className="post shadow">
-                                <img src={API.getAsset(article.thumbnail.url)}></img>
+                                <img alt={`${article.title} thumbnail`} src={API.getAsset(article.thumbnail.url)}></img>
                                 <h4 className="my-3">{article.title}</h4>
                                 <small>{article.overview}</small>
                                 <hr />
