@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="d-flex justify-content-center align-items-center footer-bottom">
-                <span>flop!EDT Copyright &copy; 2020. Made with <i style={{ color: 'red' }} className="fas fa-heart"></i> by Hugo Amalric & Thomas Gouveia.</span>
+                <span>flop!EDT Copyleft <span style={{transform: 'rotate(180deg)', display: 'inline-block'}}>&copy;</span> 2020. Made with <i style={{ color: 'red' }} className="fas fa-heart"></i> by Hugo Amalric & Thomas Gouveia.</span>
             </div>
         </div>
     )

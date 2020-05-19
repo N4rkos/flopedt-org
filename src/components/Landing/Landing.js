@@ -8,7 +8,7 @@ import landingWave from '../../assets/svg/landing.svg'
 const Landing = () => {
 
     return (
-        <section className="landing" style={{ marginTop: '-80px' }}>
+        <section className="landing" style={{ marginTop:  '-70px'}}>
             <img className="wave" src={landingWave}></img>
             <a href="#presentation" className="view-more">Voir plus</a>
             <div className="container d-flex flex-column justify-content-center align-items-center">

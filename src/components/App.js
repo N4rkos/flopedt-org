@@ -19,6 +19,7 @@ import Newsletter from './Newsletter/Newsletter'
 import Privacy from './Privacy/Privacy'
 import Blog from './Blog/Blog'
 import Donate from './Donate/Donate'
+import Post from './Blog/Post'
 
 const App = () => {
     return (
@@ -39,7 +40,7 @@ const App = () => {
                     <Route path={Routes.contributors} component={Contributors} />
                     <Route path={Routes.blog.faq.index} component={FAQ} />
                     <Route path={Routes.blog.index} exact component={Blog} />
-                    {/* <Route path={Routes.blog.show} component={Tutorial} /> */}
+                    <Route path={Routes.blog.show} component={Post} />
                     <Route path={Routes.legals} component={Legals} />
                     <Route path={Routes.privacy} component={Privacy} />
                     <Route path={Routes.donate} component={Donate} />

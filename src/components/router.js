@@ -11,7 +11,7 @@ export const Routes = {
     donate: '/soutenir-le-projet',
     blog: {
         index: '/blog',
-        show: '/blog/:slug',
+        show: '/blog/:id/:slug',
         faq: {
             index: '/blog/foire-aux-questions'
         }

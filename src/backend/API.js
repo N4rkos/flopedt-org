@@ -8,10 +8,18 @@ const AUTHORS_URL = "http://thomasgouveia.fr/xflop/AUTHORS.txt"
  */
 class API {
 
+    /**
+     * Récupère une image dans l'API
+     * @param {string} path 
+     *      chemin de la ressource (/uploads/:res)
+     */
     static getAsset(path) {
         return `${API_URL}${path}`
     }
 
+    /**
+     * Récupère tous les utilisateurs de flop!EDT
+     */
     static async getClients() {
         const response = await Axios.get(`${API_URL}/clients`)
         if (response.status === 200) return response.data
@@ -19,6 +27,9 @@ class API {
         return []
     }
 
+    /**
+     * Récupère les images de mises en avant de flop!EDT
+     */
     static async getSlides() {
         const response = await Axios.get(`${API_URL}/slideshows`)
         if (response.status === 200) return response.data
@@ -26,6 +37,11 @@ class API {
         return []
     }
 
+    /**
+     * Récupère n témoignages depuis l'API
+     * @param {number} n 
+     *      nombre de témoignages à récupérer, par défaut 3
+     */
     static async getRandomTestimonials(n) {
         const max = n || 3
         const response = await Axios.get(`${API_URL}/testimonials`)
@@ -43,6 +59,9 @@ class API {
         return []
     }
 
+    /**
+     * Retourne les questions mises en avant, afin de les affichées sur la page d'accueil.
+     */
     static async getShowcaseQuestions() {
         const response = await Axios.get(`${API_URL}/questions?showcase=true`)
         if (response.status === 200) return response.data
@@ -50,6 +69,9 @@ class API {
         return []
     }
 
+    /**
+     * Récupère toutes les questions
+     */
     static async getQuestions() {
         const response = await Axios.get(`${API_URL}/questions`)
         if (response.status === 200) return response.data
@@ -57,6 +79,9 @@ class API {
         return []
     }
 
+    /**
+     * Récupère tous les types de questions
+     */
     static async getQuestionsTypes() {
         const response = await Axios.get(`${API_URL}/question-types`)
         if (response.status === 200) return response.data
@@ -64,6 +89,9 @@ class API {
         return []
     }
 
+    /**
+     * Récupère les contributeurs du projet
+     */
     static async getContributors() {
         const response = await Axios.get(`${AUTHORS_URL}`)
         if (response.status === 200) console.log(response)
@@ -71,6 +99,9 @@ class API {
         return []
     }
 
+    /**
+     * Récupère les articles du blog
+     */
     static async getNews() {
         const response = await Axios.get(`${API_URL}/articles?published=true&_sort=updated_at:DESC`)
         if (response.status === 200) return response.data
@@ -78,14 +109,20 @@ class API {
         return []
     }
 
-    static async getNewsBySlug(slug) {
-        const id = slug.split('-')[0]
+    /**
+     * Récupère un article du blog en fonction de son id
+     * @param {number} id 
+     */
+    static async getNewsById(id) {
         const response = await Axios.get(`${API_URL}/articles/${id}`)
         if (response.status === 200) return response.data
-        console.error('[ERREUR] : Impossible de récupérer l\'article ' + slug + ' Code HTTP : ' + response.status)
+        console.error('[ERREUR] : Impossible de récupérer l\'article ' + id + ' Code HTTP : ' + response.status)
         return {}
     }
 
+    /**
+     * Récupère les mentions légales
+     */
     static async getLegals() {
         const response = await Axios.get(`${API_URL}/mentions-legales`)
         if (response.status === 200) return response.data
@@ -93,6 +130,10 @@ class API {
         return {}
     }
 
+    /**
+     * Ajoute un utilisateur dans la newsletter
+     * @param {string} email 
+     */
     static async addToNewsletter(email) {
         try {
             const response = await Axios.post(`${API_URL}/newsletters`, { email: email })
@@ -103,6 +144,9 @@ class API {
         }
     }
 
+    /**
+     * Récupère la politique de confidentialité
+     */
     static async getPrivacy() {
         const response = await Axios.get(`${API_URL}/politique-de-confidentialite`)
         if (response.status === 200) return response.data
