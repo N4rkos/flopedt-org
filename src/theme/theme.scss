@@ -53,3 +53,18 @@ html  {
         background: #4B4CA3;
     }
 }
+
+.donate-btn {
+    background: #FA5851;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: .6s ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgb(255, 130, 125);
+    }
+}

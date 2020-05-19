@@ -7,12 +7,11 @@ export const Routes = {
     notFound: '*',
     legals: '/mentions-legales',
     privacy: '/confidentialite',
+    documentation: '/documentation',
+    donate: '/soutenir-le-projet',
     blog: {
         index: '/blog',
-        tutorials: {
-            index: '/blog/tutoriels',
-            view: '/blog/tutoriels/:slug'
-        },
+        show: '/blog/:slug',
         faq: {
             index: '/blog/foire-aux-questions'
         }

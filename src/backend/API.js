@@ -71,18 +71,18 @@ class API {
         return []
     }
 
-    static async getTutorials() {
-        const response = await Axios.get(`${API_URL}/tutorials?published=true&_sort=updated_at:DESC`)
+    static async getNews() {
+        const response = await Axios.get(`${API_URL}/articles?published=true&_sort=updated_at:DESC`)
         if (response.status === 200) return response.data
         console.error('[ERREUR] : Impossible de récupérer les tutoriels. Code HTTP : ' + response.status)
         return []
     }
 
-    static async getTutorialBySlug(slug) {
+    static async getNewsBySlug(slug) {
         const id = slug.split('-')[0]
-        const response = await Axios.get(`${API_URL}/tutorials/${id}`)
+        const response = await Axios.get(`${API_URL}/articles/${id}`)
         if (response.status === 200) return response.data
-        console.error('[ERREUR] : Impossible de récupérer le tutoriel ' + slug + ' Code HTTP : ' + response.status)
+        console.error('[ERREUR] : Impossible de récupérer l\'article ' + slug + ' Code HTTP : ' + response.status)
         return {}
     }
 

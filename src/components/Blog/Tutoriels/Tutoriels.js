@@ -10,7 +10,7 @@ const Tutoriels = () => {
     const [tutorials, setTutorials] = useState([])
 
     useEffect(() => {
-        API.getTutorials().then(setTutorials)
+        //API.getTutorials().then(setTutorials)
     }, [])
 
     return (

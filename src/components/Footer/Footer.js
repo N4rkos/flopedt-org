@@ -19,7 +19,7 @@ const Footer = () => {
                             <ul>
                                 <li><Link to={Routes.home}>flop!EDT</Link></li>
                                 <li><Link to={Routes.blog.faq.index}>FAQ</Link></li>
-                                <li><Link to={Routes.blog.tutorials.index}>Tutoriels</Link></li>
+                                <li><Link to={Routes.blog.index}>Blog</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-4 footer-elem">

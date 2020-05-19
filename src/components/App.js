@@ -14,19 +14,18 @@ import NotFound from './404/NotFound'
 import { Routes } from './router'
 import Navbar from './Navigation/Navbar'
 import ScrollTop from './ScrollTop/ScrollTop'
-import Tutoriels from './Blog/Tutoriels/Tutoriels'
-import Tutorial from './Blog/Tutoriels/Tutorial'
 import Legals from './Legals/Legals'
 import Newsletter from './Newsletter/Newsletter'
 import Privacy from './Privacy/Privacy'
+import Blog from './Blog/Blog'
+import Donate from './Donate/Donate'
 
 const App = () => {
-    //document.title = "FlopEDT | Gestionnaire d'emploi du temps flexible et open source"
     return (
         <Router>
             <ScrollTop />
             <Navbar />
-            <div style={{ marginTop: '80px' }}>
+            <div style={{ marginTop: '70px' }}>
                 <Switch>
                     <Route path={Routes.home} exact>
                         <Landing />
@@ -39,11 +38,11 @@ const App = () => {
                     </Route>
                     <Route path={Routes.contributors} component={Contributors} />
                     <Route path={Routes.blog.faq.index} component={FAQ} />
-                    {/* <Route path={Routes.blog.index} exact component={Blog} /> */}
-                    <Route path={Routes.blog.tutorials.index} exact component={Tutoriels} />
-                    <Route path={Routes.blog.tutorials.view} component={Tutorial} />
+                    <Route path={Routes.blog.index} exact component={Blog} />
+                    {/* <Route path={Routes.blog.show} component={Tutorial} /> */}
                     <Route path={Routes.legals} component={Legals} />
                     <Route path={Routes.privacy} component={Privacy} />
+                    <Route path={Routes.donate} component={Donate} />
                     <Route path={Routes.notFound} component={NotFound} />
                 </Switch>
             </div>
